@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/e8096444b9.js" crossorigin="anonymous"></script>
+    <title>Instagram</title>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary d-flex flex-row justify-content-between px-5">
+        <div>
+            <a class="navbar-brand" href="#">
+                <i class="fa-brands fa-instagram"></i>
+                Instagram
+            </a>
+        </div>
+        <div style="grid-template-columns: 1fr 1fr;" class="d-flex flex-row d-grid gap-5">
+            <div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch demo modal
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <label class="form-label">Caption:</label>
+                                <textarea class="form-control" placeholder="Add the caption of your post here"></textarea>
+
+                                <div class="mt-2">
+                                    <button class="btn btn-light">
+                                        <i class="fa-solid fa-camera"></i>
+                                    </button>
+
+                                    <button class="btn btn-light">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <!-- Footer -->
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+            <!-- dropdown -->
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                    <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item text-danger" href="#">log out</a></li>
+                </ul>
+                </div>
+            </div>
+        </div>            
+    </nav>
+
+    <!-- Cambio grid -->
+    <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#grid">
+            <i class="fa-solid fa-table-cells"></i>
+            </button>
+        </li>
+
+        <li class="nav-item">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#feed">
+            <i class="fa-solid fa-square"></i>
+            </button>
+        </li>
+    </ul>
+    <!--Vistas publicaciones-->
+    <div class="tab-content mt-4">
+        <!-- GRID vista -->
+        <div class="tab-pane fade show active" id="grid">
+            <div class="container-fluid">
+                <div class="row g-2">
+
+                    <div class="col-md-4">
+                    <img src="https://www.infobae.com/resizer/v2/OZTGVX562FGIBILJ4O7D5PMFF4.jpg?auth=b44310f4ec90067c2d74240975e8c24ac11e6453af2a166e7c6860f496aeef8e&smart=true&width=1200&height=1200&quality=85" class="img-fluid">
+                    </div>
+
+                    <div class="col-md-4">
+                    <img src="https://img.freepik.com/foto-gratis/vista-animal-gracioso_23-2151098416.jpg?semt=ais_rp_50_assets&w=740&q=80" class="img-fluid">
+                    </div>
+
+                    <div class="col-md-4">
+                    <img src="https://img.wattpad.com/706207f220dd1f78143c79907d06eb1dbe963fc6/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f7931774c486230503976413959413d3d2d3238342e313565313634363263393861356232643530303733323238333235372e6a7067?s=fit&w=720&h=720" class="img-fluid">
+                    </div>
+
+                    <div class="col-md-4 ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJdQTx5ltTiszWpq2DDVnqGwDZq10unriYGQ&s" style="width: 450px;" class="img-fluid">
+                    </div>
+
+                    <div class="col-md-4">
+                    <img src="https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-avt-0068-euttp/6e27eb667c252fce7ad6bdb98dd2d651~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=d69de578&x-expires=1773378000&x-signature=SNvVkYSb6Pn8EPthurX%2BSz7RUNI%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5" class="img-fluid">
+                    </div>
+
+                    <div class="col-md-4">
+                    <img src="https://i.pinimg.com/564x/89/4f/a0/894fa055a592d5b1362f0824e049bc43.jpg" class="img-fluid">
+                    </div>
+
+                    <div class="col-md-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9V6PvQq2qPY4hx9tTv0yPm05oXI8GWPgqDA&s" style="width:450px" class="img-fluid">
+                    </div>
+
+                    <div class="col-md-4">
+                    <img src="https://pbs.twimg.com/media/FoDjmY2XgAAGK2B.jpg" class="img-fluid">
+                    </div>
+
+                    <div class="col-md-4">
+                    <img src="https://i.pinimg.com/736x/33/c4/41/33c4410513a8ad8a5355bfe1ce83e1ce.jpg" class="img-fluid">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- FEED vista -->
+        <div class="tab-pane fade" id="feed">
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <div class="col-md-6">
+
+                        <div class="card mb-4">
+                            <div class="card-header d-flex justify-content-between">
+                                Uy Como asi!
+                                <small>08/26</small>
+                            </div>  
+
+                            <img src="https://www.infobae.com/resizer/v2/OZTGVX562FGIBILJ4O7D5PMFF4.jpg?auth=b44310f4ec90067c2d74240975e8c24ac11e6453af2a166e7c6860f496aeef8e&smart=true&width=1200&height=1200&quality=85" class="card-img-top">
+
+                            <div class="card-body">
+                                <strong>204 Likes</strong>
+                                <p>This is an example of a very good photo that you can post on instagram</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4">
+                            <div class="card-header d-flex justify-content-between">
+                                No entienden la vibra
+                                <small>04/09</small>
+                            </div>
+
+                            <img src="https://img.freepik.com/foto-gratis/vista-animal-gracioso_23-2151098416.jpg?semt=ais_rp_50_assets&w=740&q=80" class="card-img-top">
+
+                            <div class="card-body">
+                                <strong>26985 Likes</strong>
+                                <p>This is an example of a very good photo that you can post on instagram</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4">
+                            <div class="card-header d-flex justify-content-between">
+                                Toy harto 
+                                <small>04/09</small>
+                            </div>
+
+                            <img src="https://img.wattpad.com/706207f220dd1f78143c79907d06eb1dbe963fc6/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f7931774c486230503976413959413d3d2d3238342e313565313634363263393861356232643530303733323238333235372e6a7067?s=fit&w=720&h=720" class="card-img-top">
+
+                            <div class="card-body">
+                                <strong>26985 Likes</strong>
+                                <p>This is an example of a very good photo that you can post on instagram</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4">
+                            <div class="card-header d-flex justify-content-between">
+                                AESTHETIC
+                                <small>04/09</small>
+                            </div>
+
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJdQTx5ltTiszWpq2DDVnqGwDZq10unriYGQ&s" class="card-img-top">
+
+                            <div class="card-body">
+                                <strong>26985 Likes</strong>
+                                <p>This is an example of a very good photo that you can post on instagram</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4">
+                            <div class="card-header d-flex justify-content-between">
+                                Fino
+                                <small>04/09</small>
+                            </div>
+
+                            <img src="https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-avt-0068-euttp/6e27eb667c252fce7ad6bdb98dd2d651~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=d69de578&x-expires=1773378000&x-signature=SNvVkYSb6Pn8EPthurX%2BSz7RUNI%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast5" class="card-img-top">
+
+                            <div class="card-body">
+                                <strong>26985 Likes</strong>
+                                <p>This is an example of a very good photo that you can post on instagram</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4">
+                            <div class="card-header d-flex justify-content-between">
+                                LA ESQUIZOFRENIA!
+                                <small>04/09</small>
+                            </div>
+
+                            <img src="https://i.pinimg.com/564x/89/4f/a0/894fa055a592d5b1362f0824e049bc43.jpg" class="card-img-top">
+
+                            <div class="card-body">
+                                <strong>26985 Likes</strong>
+                                <p>This is an example of a very good photo that you can post on instagram</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4">
+                            <div class="card-header d-flex justify-content-between">
+                                Estatica de la mas alta calidad
+                                <small>04/09</small>
+                            </div>
+
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9V6PvQq2qPY4hx9tTv0yPm05oXI8GWPgqDA&s" class="card-img-top">
+
+                            <div class="card-body">
+                                <strong>26985 Likes</strong>
+                                <p>This is an example of a very good photo that you can post on instagram</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4">
+                            <div class="card-header d-flex justify-content-between">
+                                Se te perdio algo?
+                                <small>04/09</small>
+                            </div>
+
+                            <img src="https://pbs.twimg.com/media/FoDjmY2XgAAGK2B.jpg" class="card-img-top">
+
+                            <div class="card-body">
+                                <strong>26985 Likes</strong>
+                                <p>This is an example of a very good photo that you can post on instagram</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4">
+                            <div class="card-header d-flex justify-content-between">
+                                JIJIJIJI!
+                                <small>04/09</small>
+                            </div>
+
+                            <img src="https://i.pinimg.com/736x/33/c4/41/33c4410513a8ad8a5355bfe1ce83e1ce.jpg" class="card-img-top">
+
+                            <div class="card-body">
+                                <strong>26985 Likes</strong>
+                                <p>This is an example of a very good photo that you can post on instagram</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html>
